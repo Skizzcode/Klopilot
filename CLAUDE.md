@@ -158,6 +158,7 @@ Das neue Design soll wirken wie: **Linear.app meets deutsche Handwerks-Seriosit�
 - StatusChip, MockQRCode Komponenten
 - Logo-Paket in `/public/logo/`
 - `next build` läuft sauber durch (8 Routen)
+- **Bugfix Report Dark Mode**: `brand-950` existiert nicht in der Palette → `dark:bg-slate-700` / `dark:bg-slate-600` für das CTA-Widget in `/report`
 
 ## Was offen ist ❌
 
@@ -179,6 +180,8 @@ Das neue Design soll wirken wie: **Linear.app meets deutsche Handwerks-Seriosit�
 5. Mobile: Fahrer-Seiten müssen auf 375px perfekt sein
 6. `suppressHydrationWarning` auf `<html>` wegen ThemeProvider
 7. Pexels API Key NIEMALS im Client-Code
+8. Nur Farben aus der Palette verwenden (brand-50 bis brand-900) — `brand-950` existiert NICHT
+9. Tailwind arbitrary values (`h-[80vh]`, `bg-[#hex]`, `leading-[x]`) → besser inline `style={}` für kritische Layout-Werte, da JIT diese erst nach Dev-Server-Neustart kompiliert
 
 ---
 
