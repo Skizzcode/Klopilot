@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KloPilot App Icon Dark">
+  <rect width="512" height="512" rx="112" fill="#1A1A2E"></rect>
+
+  <!-- K Icon -->
+  <g transform="translate(142 116) scale(4.35)">
+    <!-- K stem -->
+    <rect x="0" y="0" width="12" height="60" rx="3" fill="#FFFFFF"></rect>
+
+    <!-- K upper arm -->
+    <path d="M18 29L48 0H64L32 32L18 29Z" fill="#FFFFFF"></path>
+
+    <!-- K lower arm / route -->
+    <path d="M18 34L34 31L64 60H47L28 42L18 48V34Z" fill="#1D9E75"></path>
+
+    <!-- Navigation arrow head -->
+    <path d="M44 34L68 24L58 48L53 39L44 34Z" fill="#1D9E75"></path>
+  </g>
+</svg>

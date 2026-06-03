@@ -1,0 +1,23 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KloPilot Logo White">
+  <rect width="400" height="100" fill="#1A1A2E"></rect>
+
+  <!-- Icon -->
+  <g transform="translate(28 20)">
+    <!-- K stem -->
+    <rect x="0" y="0" width="12" height="60" rx="3" fill="#FFFFFF"></rect>
+
+    <!-- K upper arm -->
+    <path d="M18 29L48 0H64L32 32L18 29Z" fill="#FFFFFF"></path>
+
+    <!-- K lower arm / navigation route -->
+    <path d="M18 34L34 31L64 60H47L28 42L18 48V34Z" fill="#1D9E75"></path>
+
+    <!-- Navigation arrow head -->
+    <path d="M44 34L68 24L58 48L53 39L44 34Z" fill="#1D9E75"></path>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="118" y="62" font-family="Inter, Geist, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="-1.4" fill="#FFFFFF">
+    Klo<tspan fill="#1D9E75">Pilot</tspan>
+  </text>
+</svg>

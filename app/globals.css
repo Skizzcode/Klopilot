@@ -19,11 +19,11 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, rgba(14, 165, 233, 0.12), transparent 28%), radial-gradient(circle at 15% 15%, rgba(15, 23, 42, 0.05), transparent 16%), #f8fafc;
+  background: radial-gradient(circle at top, rgba(29, 158, 117, 0.12), transparent 28%), radial-gradient(circle at 15% 15%, rgba(15, 23, 42, 0.05), transparent 16%), #f8fafc;
 }
 
 .dark body {
-  background: radial-gradient(circle at top, rgba(14, 165, 233, 0.08), transparent 28%), radial-gradient(circle at 15% 15%, rgba(15, 23, 42, 0.15), transparent 16%), #0f172a;
+  background: radial-gradient(circle at top, rgba(29, 158, 117, 0.08), transparent 28%), radial-gradient(circle at 15% 15%, rgba(15, 23, 42, 0.15), transparent 16%), #0f172a;
 }
 
 * {
@@ -35,11 +35,11 @@ button, input, textarea, select {
 }
 
 ::selection {
-  background: rgba(14, 165, 233, 0.2);
+  background: rgba(29, 158, 117, 0.2);
 }
 
 .dark ::selection {
-  background: rgba(14, 165, 233, 0.3);
+  background: rgba(29, 158, 117, 0.3);
 }
 
 @layer utilities {

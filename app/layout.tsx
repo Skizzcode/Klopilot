@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/lib/theme-provider'
-import { ThemeToggle } from '@/components/theme-toggle'
 
 export const metadata: Metadata = {
-  title: 'KloPilot – einfache Disposition für Toilettenvermieter',
-  description: 'Mockup-Demo für KloPilot: Kabinenstandorte, Fahrer-Touren und Service-Nachweise in einer klaren App.'
+  title: 'KloPilot',
+  description: 'Die einfache Dispo-App für mobile Toilettenvermieter',
+  icons: {
+    icon: '/logo/logo3.svg',
+    apple: '/logo/logo3.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -14,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ThemeProvider defaultTheme="light" storageKey="klopilot-theme">
           {children}
-          <ThemeToggle />
         </ThemeProvider>
       </body>
     </html>

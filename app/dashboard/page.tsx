@@ -1,24 +1,28 @@
 import Link from 'next/link'
-import { ArrowRight, MapPin, Truck, ClipboardCheck, AlertTriangle } from 'lucide-react'
+import { ArrowRight, MapPin, ClipboardCheck, AlertTriangle } from 'lucide-react'
 import { overviewStats, toilets, jobs } from '@/lib/mockData'
-import { SectionTitle } from '@/components/SectionTitle'
-import { StatusChip } from '@/components/StatusChip'
+import { Navbar } from '@/components/Navbar'
+import { StatusChip, type StatusVariant } from '@/components/StatusChip'
 
-function statusVariant(status: string) {
+function statusVariant(status: string): StatusVariant {
   if (status === 'vermietet') return 'success'
-  if (status === 'abholen' || status === 'service fällig') return 'warning'
+  if (status === 'abholen') return 'warning'
+  if (status === 'service fällig') return 'service'
   if (status === 'defekt') return 'alert'
   return 'neutral'
 }
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-10 sm:px-10 lg:px-16 dark:bg-slate-900">
+    <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
+      <Navbar />
+      <div className="px-6 py-10 sm:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-brand-700 dark:text-brand-300">KloPilot Dashboard</p>
-            <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl dark:text-white">Touren & Kabinen heute</h1>
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-brand-700 dark:text-brand-300">KloPilot Dashboard</p>
+            <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl dark:text-white">Touren & Kabinen heute</h1>
+            <p className="mt-4 max-w-xl text-base text-slate-600 dark:text-slate-300">Live-Überblick über vermietete Kabinen, offene Jobs und gemeldete Probleme — auf einen Blick.</p>
           </div>
           <Link href="/demo" className="inline-flex items-center gap-2 rounded-[1.75rem] border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
             Zur Demo
@@ -39,9 +43,9 @@ export default function DashboardPage() {
             <p className="text-sm text-slate-500 dark:text-slate-400">Offene Abholungen</p>
             <p className="mt-4 text-4xl font-semibold text-slate-950 dark:text-white">{overviewStats.pickups}</p>
           </div>
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft dark:border-slate-700 dark:bg-slate-800">
-            <p className="text-sm text-slate-500 dark:text-slate-400">Probleme</p>
-            <p className="mt-4 text-4xl font-semibold text-slate-950 dark:text-white">{overviewStats.issues}</p>
+          <div className="rounded-[2rem] border border-rose-100 bg-rose-50 p-7 text-rose-700 shadow-soft dark:border-rose-800 dark:bg-rose-950/40 dark:text-rose-300">
+            <p className="text-sm text-rose-700 dark:text-rose-300">Probleme</p>
+            <p className="mt-4 text-4xl font-semibold text-rose-700 dark:text-rose-300">{overviewStats.issues}</p>
           </div>
         </div>
 
@@ -140,6 +144,7 @@ export default function DashboardPage() {
               </div>
             </div>
           </aside>
+        </div>
         </div>
       </div>
     </main>
