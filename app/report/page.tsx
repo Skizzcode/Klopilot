@@ -71,12 +71,12 @@ export default function ReportPage() {
             </div>
           </div>
 
-          <div className="mt-10 flex items-center justify-between rounded-[1.75rem] bg-brand-50 p-6 text-slate-950 shadow-soft dark:bg-brand-950/40 dark:text-white">
+          <div className="mt-10 flex items-center justify-between rounded-[1.75rem] bg-brand-50 p-6 text-slate-950 shadow-soft dark:bg-slate-700 dark:text-white">
             <div>
               <p className="text-sm font-semibold">Fertige Übersicht für den Chef</p>
               <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">Bereit für die kurze Nachbesprechung oder den Bericht an den Kunden.</p>
             </div>
-            <div className="inline-flex items-center gap-2 rounded-3xl bg-white px-4 py-3 text-sm font-semibold text-brand-700 dark:bg-slate-800 dark:text-brand-300">
+            <div className="inline-flex items-center gap-2 rounded-3xl bg-white px-4 py-3 text-sm font-semibold text-brand-700 dark:bg-slate-600 dark:text-brand-300">
               Weiter zur Tour
               <ArrowRight className="h-4 w-4" />
             </div>
